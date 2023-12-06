@@ -1,0 +1,53 @@
+.div {
+    background-color: black;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+
+}
+
+
+.allcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+.container {
+    color: white;
+    width: 320px;
+    margin: 20px;
+
+
+    border: 2px solid white;
+    border-bottom: 3px solid white;
+    border-radius: 12px;
+
+}
+.container:hover {
+transform: translate3d(0px, -6px, 0px);
+transition: transform 0.3s ease-out;
+}
+
+
+
+
+
+#c1 {
+
+}
+
+#c2 {
+
+}
+
+#c3 {
+
+}
+
+
+
+.foto {
+    width: 320px;
+    object-fit: contain;
+}
