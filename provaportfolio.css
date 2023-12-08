@@ -109,6 +109,7 @@ transition: transform 0.3s ease-out;
   
 
     .button span {
+        color: #1c1c1c;
         cursor: pointer;
         display: inline-block;
         position: relative;
@@ -122,12 +123,15 @@ transition: transform 0.3s ease-out;
         top: 0;
         right: -20px;
         transition: 0.5s;
+        color: #1c1c1c;
     }
     .button:hover span {
         padding-right: 25px;
+        color: #1c1c1c;
       }
       
       .button:hover span:after {
+        color: #1c1c1c;
         opacity: 1;
         right: 0;
       }
