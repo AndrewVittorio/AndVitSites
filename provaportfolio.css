@@ -1,137 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="provaportfolio.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+<body style="margin: 0 auto;">
+<!--------------------------  Body ----------------------------------->
 
-body {
-    margin: 0px auto 0px;
-    font-family: 'Poppins', sans-serif;
-}
+<br><br><br>
 
-.div1 {
-    background-color: black;
-    text-align: center;
-    justify-content: center;
-    padding: 15px;
+<div class="div1">
+  <h1 style="color: whitesmoke;">I nostri modelli siti web</h1>
+    
+  <div class="allcontainer">
+  
+        <div class="container" id="c1">
+            <h2>Sito Pizzeria</h2>
 
-}
+            <img src="pizzafotoc1.jpg" class="foto"></img>
+        </div>
 
+        <div class="container" id="c2">
+          <h2>Sito Parrucchiere</h2>
 
-.allcontainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
-}
+          <img src="fotoparruchierec2.jpg" class="foto"></img>
+        </div>
 
-.container {
-    background-color: #1c1c1c;
-    color: white;
-    width: 320px;
-    margin: 20px;
+        <div class="container" id="c3">
+          <h2>Sito Locale</h2>
 
+          <img src="fotolocalec3.jpg" class="foto"></img>
 
-    border: 2px solid white;
-    border-bottom: 3px solid white;
-    border-radius: 14px;
-
-}
-.container:hover {
-transform: translate3d(0px, -6px, 0px);
-transition: transform 0.3s ease-out;
-}
-
-
-#c1 {
-}
-
-#c2 {
-}
-
-#c3 {
-}
+        </div>
+  </div>
+</div>
 
 
-.foto {
-    width: 320px;
-    max-width: 440px;
-    object-fit: contain;
-}
+<br><br><br>
 
 
+<div class="div2">
+  <h1>Testimonianza</h1>
 
-/* ---------Testimonianza------------ */
+  <div class="div2_1">
+    <img src="fototestimonianza.png" id="fototestimonianza">
+  
+    <h4 style="width: 400px">
+      Scopri il nostro sito per il Comune di Pieve Emanuele, 
+      frutto della nostra competenza nella progettazione di siti web. 
+      La nostra attenzione è concentrata sulla promozione mirata 
+      della biblioteca comunale,
+      fornendo una piattaforma online professionale e efficace.
+      Siamo orgogliosi di contribuire alla diffusione 
+      della cultura attraverso soluzioni digitali affidabili.
+      <br>
+      <button class="button" style="vertical-align:middle">
+      <a href="https://andrewvittorio.github.io/Biblioteca/" target="_blank">
+        <span>Clicca qui...</span>
+      </a>
+      </button>
 
-.div2 {
-    background-color: black;
-    color: white;
-    text-align: center;
-    justify-content: center;
-    padding: 25px 25px 35px 25px;
-
-}
-
-#fototestimonianza {
-    min-width: 300px;
-    max-width: 500px;
-    max-width: fit-content;
-}
-
-
-.div2_1 {
-    background-color: #1c1c1c;
-    color: white;
-
-    padding: 35px 20px;
-
-
-    border: 6px solid white;
-    border-radius: 30px;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    justify-content: space-around;
-}
-
-.button {
-    display: inline-block;
-    font-size: larger;
-    border-radius: 4px;
-    background-color: white;
-    border: none;
-    color: #1c1c1c;
-    text-align: center;
-    font-size: 20px;
-    padding: 5px;
-    width: 200px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 15px;
-  }
+    </h4>
   
 
-    .button span {
-        color: #1c1c1c;
-        cursor: pointer;
-        display: inline-block;
-        position: relative;
-        transition: 0.5s;
-    }
+  </div>
+</div>
 
-    .button span:after {
-        content: '\00bb';
-        position: absolute;
-        opacity: 0;
-        top: 0;
-        right: -20px;
-        transition: 0.5s;
-        color: #1c1c1c;
-    }
-    .button:hover span {
-        padding-right: 25px;
-        color: #1c1c1c;
-      }
-      
-      .button:hover span:after {
-        color: #1c1c1c;
-        opacity: 1;
-        right: 0;
-      }
+
+<br><br><br>
+    
+<!--------------------------  Body ----------------------------------->
+
+</body>
+</html>
