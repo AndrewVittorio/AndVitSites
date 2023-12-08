@@ -5,8 +5,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-
-.div {
+.div1 {
     background-color: black;
     text-align: center;
     justify-content: center;
@@ -22,14 +21,15 @@ body {
 }
 
 .container {
+    background-color: #1c1c1c;
     color: white;
     width: 320px;
     margin: 20px;
 
 
     border: 2px solid white;
-    border-bottom: 4px solid white;
-    border-radius: 12px;
+    border-bottom: 3px solid white;
+    border-radius: 14px;
 
 }
 .container:hover {
@@ -38,24 +38,96 @@ transition: transform 0.3s ease-out;
 }
 
 
-
-
-
 #c1 {
-
 }
 
 #c2 {
-
 }
 
 #c3 {
-
 }
-
 
 
 .foto {
     width: 320px;
+    max-width: 440px;
     object-fit: contain;
 }
+
+
+
+/* ---------Testimonianza------------ */
+
+.div2 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 25px 25px 35px 25px;
+}
+
+#fototestimonianza {
+    min-width: 350px;
+    max-width: 500px;
+    max-width: fit-content;
+}
+
+
+.div2_1 {
+    background-color: #1c1c1c;
+    color: white;
+
+    padding: 35px 20px;
+    margin: 0px 5%;
+
+
+    border: 6px solid white;
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+}
+
+.button {
+    display: inline-block;
+    font-size: larger;
+    border-radius: 4px;
+    background-color: white;
+    border: none;
+    color: #1c1c1c;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 15px;
+  }
+  
+
+    .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+    .button:hover span {
+        padding-right: 25px;
+      }
+      
+      .button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
