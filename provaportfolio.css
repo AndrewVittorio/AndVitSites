@@ -64,10 +64,11 @@ transition: transform 0.3s ease-out;
     text-align: center;
     justify-content: center;
     padding: 25px 25px 35px 25px;
+
 }
 
 #fototestimonianza {
-    min-width: 350px;
+    min-width: 300px;
     max-width: 500px;
     max-width: fit-content;
 }
