@@ -134,3 +134,25 @@ transition: transform 0.3s ease-out;
         opacity: 1;
         right: 0;
       }
+
+
+
+
+
+.div3 {
+    background-color: #1c1c1c;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+    }
+
+
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+}
