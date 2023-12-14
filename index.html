@@ -9,6 +9,50 @@
 <body style="margin: 0 auto;">
 <!--------------------------  Body ----------------------------------->
 
+
+<!------------------Inizio NAV BAR------------------------->
+
+<div container>
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">Modelli</a>
+  <a href="#contact">Testimonianza</a>
+  <div class="dropdown">
+    <button class="dropbtn">Contatti
+      <i class="fa fa-caret-down"></i>
+    </button>
+  </div> 
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div id="bio">
+  <center> 
+    <br><br><br><br><br><br>
+      <h1>Digitalizziamo la tua attività</h1>
+      <p>Progettiamo e creiamo da zero siti web, <br> qualsiasi sia la tua azienda o professione.</p>
+      <br><br><br><br><br><br>
+  </center>
+</div>
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+
+<!------------------Fine NAV BAR------------------------->
+
+
+
 <br><br><br>
 
 <div class="div1">
@@ -69,7 +113,7 @@
 <br><br><br>
 
 <div class="div3">
-  <h3>Vuoi anche tu avere un sito <br> per la tua attività?</h3>
+  <h2>Vuoi anche tu avere un sito <br> per la tua attività?</h2>
   <button class="button" style="vertical-align:middle; font-size: 21px;
   font-weight: 600;" >
     <a href=https://wa.me/3713426796" target="_blank">
@@ -79,7 +123,9 @@
 <div>
 
 <div class="footer">
-  <p>Copyright 2023 AndVit| All Rights Reserved</p>
+  <br><br>
+  <p>©Copyright 2023 AndVit | All Rights Reserved</p>
+  <br>
 </div>
 
 
