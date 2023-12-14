@@ -135,6 +135,10 @@ transition: transform 0.3s ease-out;
         right: 0;
       }
 
+
+
+
+
 .div3 {
     background-color: #1c1c1c;
     color: white;
@@ -142,6 +146,7 @@ transition: transform 0.3s ease-out;
     justify-content: center;
     padding: 15px;
     }
+
 
 
 .footer {
