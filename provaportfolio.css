@@ -9,7 +9,7 @@ body {
     background-color: black;
     text-align: center;
     justify-content: center;
-    padding: 15px;
+    padding: 20px;
 
 }
 
@@ -18,6 +18,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
+    align-items: flex-end;
 }
 
 .container {
@@ -25,10 +26,12 @@ body {
     color: white;
     width: 320px;
     margin: 20px;
+    height: 340px;
+    align-items: flex-end;
 
 
-    border: 2px solid white;
-    border-bottom: 3px solid white;
+    border: 3px solid white;
+    border-bottom: 10px solid white;
     border-radius: 14px;
 
 }
@@ -59,11 +62,11 @@ transition: transform 0.3s ease-out;
 /* ---------Testimonianza------------ */
 
 .div2 {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     text-align: center;
     justify-content: center;
-    padding: 25px 25px 35px 25px;
+    padding: 25px 30px 45px 30px;
 
 }
 
@@ -80,7 +83,7 @@ transition: transform 0.3s ease-out;
 
     padding: 35px 20px;
 
-    border: 6px solid white;
+    border: 6px solid black;
     border-radius: 30px;
 
     display: flex;
@@ -164,10 +167,7 @@ transition: transform 0.3s ease-out;
 
 /* -----------------------Iizio Navbar css------------------------ */
 
-* {
-    padding: 0;
-    margin: 0;
-}
+
 
 
 #bio {
@@ -178,10 +178,10 @@ transition: transform 0.3s ease-out;
 }
 
 
-#bio h1 {
-    color: black;
-    padding: 10px 0px;
-}
+  #bio h1 {
+      color: black;
+      padding: 10px 0px;
+  }
 #bio p {
     color: black;
 }
@@ -222,11 +222,24 @@ transition: transform 0.3s ease-out;
     font-size: smaller;
 }
 
+.NavBarAll {
+  display: flex;
+  z-index: 10000;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: black;
+  border-bottom: 1px solid white; 
+  overflow: hidden;
+}
+
+
 
 .topnav {
-    overflow: hidden;
+  overflow: hidden;
+  width: 100%;
     background-color: black;
-    border-bottom: 1px solid white; 
+    border-bottom: 1px solid white;
   }
   
   .topnav a {
@@ -238,7 +251,6 @@ transition: transform 0.3s ease-out;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-
   }
   
   .active {
@@ -306,6 +318,9 @@ transition: transform 0.3s ease-out;
       display: block;
     }
   }
+  
+
+
   
   @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
