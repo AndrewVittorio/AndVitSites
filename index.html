@@ -17,7 +17,7 @@
     <a href="#home" class="active">Home</a>
 
     <a href="#Modelli">Modelli</a>
-    <a href="#Testimonianza">Testimonianza</a>
+    <a href="provaportfolio.html#Testimonianza">Testimonianza</a>
     <div class="dropdown">
       <button class="dropbtn">Contatti
         <i class="fa fa-caret-down"></i>
@@ -50,6 +50,29 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navbar = document.getElementById("myTopnav");
+
+    document.addEventListener("click", function (event) {
+        // Chiudi il menu se si fa clic altrove nella pagina
+        const isClickInsideNavbar = navbar.contains(event.target);
+        if (!isClickInsideNavbar && navbar.classList.contains("responsive")) {
+            navbar.classList.remove("responsive");
+        }
+    });
+});
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.classList.contains("responsive")) {
+        x.classList.remove("responsive");
+    } else {
+        x.classList.add("responsive");
+    }
+}
+
+
 </script>
 <!------------------Fine NAV BAR - Hero ------------------------->
 
