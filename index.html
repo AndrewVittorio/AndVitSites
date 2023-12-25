@@ -7,29 +7,21 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 
   </head>
-<body style="margin: 0 auto;">
+<body style="margin: 0 auto;background-color:#e0e0e0">
 <!--------------------------  Body ----------------------------------->
 
 
 <!------------------Inizio NAV BAR------------------------->
 
-<div container class="NavBarAll">
+<div class="NavBarAll">
   <div class="topnav" id="myTopnav">
     <a class="active"><img src="LogoAV.png" style="width: 15vh;"></a>
-    <a href="#home" class="active">Home</a>
-
-    <a href="#Modelli">Modelli</a>
-    <a href="#Testimonianza">Testimonianza</a>
-    <div class="dropdown">
-      <button class="dropbtn">Contatti
-        <i class="fa fa-caret-down"></i>
-      </button>
-    
-  </div> 
-  <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
+      <a href="#Modelli">Modelli</a>
+      <a href="#Testimonianza">Testimonianza</a>
+      <a href="#Contatti">Contatti</a>
+      <a href="javascript:void(0);" class="icon" onclick="toggleResponsiveMenu()">&#9776;</a>
+  </div>
 </div>
-</div>
-
 
 
 
@@ -44,53 +36,71 @@
   </div>
 
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-    const navbar = document.getElementById("myTopnav");
-
-    document.addEventListener("click", function (event) {
-        // Chiudi il menu se si fa clic altrove nella pagina
-        const isClickInsideNavbar = navbar.contains(event.target);
-        if (!isClickInsideNavbar && navbar.classList.contains("responsive")) {
-            navbar.classList.remove("responsive");
+  <script>
+    function toggleResponsiveMenu() {
+        var navbar = document.getElementById("myTopnav");
+        if (navbar.className === "topnav") {
+            navbar.className += " responsive";
+        } else {
+            navbar.className = "topnav";
         }
-    });
-});
-
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.classList.contains("responsive")) {
-        x.classList.remove("responsive");
-    } else {
-        x.classList.add("responsive");
-    }
-}
-
-    // Chiudi il menu quando si fa clic su un link nella barra di navigazione
-    for (let i = 0; i < links.length; i++) {
-        links[i].addEventListener("click", function () {
-            if (navbar.classList.contains("responsive")) {
-                navbar.classList.remove("responsive");
-            }
-        });
     }
     
-
-</script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Setup event listeners for menu items
+        const menuItems = document.querySelectorAll('#myTopnav a:not(.icon)');
+        menuItems.forEach(item => {
+            item.addEventListener('click', function() {
+                var navbar = document.getElementById("myTopnav");
+                if (navbar.className.includes("responsive")) {
+                    navbar.className = "topnav";
+                }
+            });
+        });
+    });
+  </script>
 <!------------------Fine NAV BAR - Hero ------------------------->
 
 
 
-<br id="Modelli" >
+
+
+<section id="benefits">
+  <div>
+    <h2>Perché il tuo Business <br>ha bisogno di un Sito Web?</h2>
+    <div class="benefit-items">
+      <div class="benefit-item">
+        <h3>1. Professionalità</h3>
+        <details style="text-align: center;"><summary>Cosa si intende?</summary>
+        <p class="benefit-desc">Un sito web ben progettato eleva la tua immagine professionale, fornendo una vetrina digitale che riflette la qualità del tuo lavoro e dei tuoi servizi.</p>
+        </details>
+      </div>
+
+      <div class="benefit-item">
+        <h3>2. Velocità e Accessibilità</h3>
+        <details style="text-align: center;"><summary>Cosa si intende?</summary>
+        <p class="benefit-desc">Consente ai clienti di contattarti facilmente, scoprire di più sui tuoi servizi e ottenere una panoramica del tuo locale, tutto con pochi clic.</p>
+      </details>
+      </div>
+
+      <div class="benefit-item">
+        <h3>3. Promozione</h3>
+        <details style="text-align: center;"><summary>Cosa si intende?</summary>
+        <p class="benefit-desc">Un sito web è uno strumento potente per promuovere la tua attività, raggiungere un pubblico più ampio e costruire una presenza online duratura.</p>
+      </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+</script>
+
+
+
+
+
+<br id="Modelli">
 <div class="div1">
   <h1 style="color: whitesmoke;">I nostri modelli siti web</h1>
     
@@ -119,8 +129,6 @@ function myFunction() {
 
 
 
-
-
 <div class="div2"  id="Testimonianza">
   <h1>Testimonianza</h1>
 
@@ -128,13 +136,16 @@ function myFunction() {
     <img src="fototestimonianza.png" id="fototestimonianza">
   
     <h4 style="width: 400px">
-      Scopri il nostro sito per il Comune di Pieve Emanuele, 
-      frutto della nostra competenza nella progettazione di siti web. 
-      La nostra attenzione è concentrata sulla promozione mirata 
-      della biblioteca comunale,
-      fornendo una piattaforma online professionale e efficace.
-      Siamo orgogliosi di contribuire alla diffusione 
-      della cultura attraverso soluzioni digitali affidabili.
+      Scopri il nostro sito per il 
+      <span style="color: #007BFF; font-weight: bold;">Comune di Pieve Emanuele</span>, 
+      frutto della nostra 
+      <span style="color: #28A745; font-weight: bold;">competenza</span> 
+      nella progettazione di siti web. La nostra attenzione è concentrata sulla 
+      <span style="text-decoration: underline; color: #DC3545;">promozione mirata</span> 
+      della biblioteca comunale, fornendo una 
+      <span style="font-style: italic; color: #17A2B8;">piattaforma online professionale</span> 
+      e efficace. Siamo orgogliosi di contribuire alla diffusione della cultura attraverso 
+      <span style="font-weight: bold; color: #FFC107;">soluzioni digitali affidabili</span>.
       <br>
       <button class="button" style="vertical-align:middle">
       <a href="https://andrewvittorio.github.io/Biblioteca/" target="_blank">
@@ -148,7 +159,7 @@ function myFunction() {
 
 
 
-<div class="div3">
+<div class="div3" id="Contatti">
   <h2>Vuoi anche tu avere un sito <br> per la tua attività?</h2>
   <button class="button" style="vertical-align:middle; font-size: 21px;
   font-weight: 600;" >
