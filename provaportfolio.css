@@ -209,19 +209,35 @@ transition: transform 0.3s ease-out;
 
 
 #bio {
-    background-image: url(photoop.png);
+  background-image: url('fotoheroAV.jpg'); /* Aggiorna con il percorso corretto dell'immagine */
     background-position: center;
     background-size: cover;
-    border-bottom: 2px solid black ;
+    background-repeat: no-repeat;
+    transition: background-color 0.5s ease;
+    position: relative;
+    z-index: 1;
+    padding: 100px 0; /* Aumenta il padding superiore e inferiore per incrementare l'altezza */
+  }
+
+#bio:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6); /* Overlay scuro per migliorare la leggibilità del testo */
+  opacity: 0.9; /* Regola l'opacità come preferisci */
+  z-index: -1;
 }
 
+#bio h1, #bio p {
+  color: white; /* Colore del testo */
 
-  #bio h1 {
-      color: black;
-      padding: 10px 0px;
-  }
-#bio p {
-    color: black;
+  margin: 0 auto; /* Centra il testo */
+  width: 80%; /* Controlla la larghezza del testo */
+  text-align: center;
+  position: relative; /* Assicurati che il testo sia sopra l'overlay */
 }
 #bio button {
     background-color: #3f3e3e;
