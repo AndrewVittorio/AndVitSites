@@ -15,10 +15,10 @@ body {
 
 
 .allcontainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
-    align-items: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch; /* Modifica da flex-end a stretch */
 }
 
 .container {
@@ -26,15 +26,16 @@ body {
     color: white;
     width: 320px;
     margin: 20px;
-    height: 340px;
-    align-items: flex-end;
-
-
+    padding: 0;
     border: 3px solid white;
     border-bottom: 10px solid white;
     border-radius: 14px;
-
+    overflow: hidden;
+    display: flex; /* Aggiungi questa riga */
+    flex-direction: column; /* Aggiungi questa riga */
+    justify-content: space-between; /* Aggiungi questa riga */
 }
+
 .container:hover {
 transform: translate3d(0px, -6px, 0px);
 transition: transform 0.3s ease-out;
@@ -51,11 +52,50 @@ transition: transform 0.3s ease-out;
 }
 
 
+
 .foto {
-    width: 320px;
-    max-width: 440px;
-    object-fit: contain;
+  width: 100%; /* La foto riempie la larghezza del container */
+  height: 250px; /* Imposta un'altezza fissa */
+  object-fit: cover; /* Mantiene le proporzioni dell'immagine */
+  display: block;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query per dispositivi con larghezza massima di 600px */
+@media screen and (max-width: 600px) {
+  .allcontainer .container {
+      width: 256px; /* Imposta la nuova larghezza */
+      height: auto; /* Imposta l'altezza in modo automatico per mantenere le proporzioni */
+      margin: 10px; /* Aggiusta i margini se necessario */
+      /* Altre proprietà del container se necessario */
+  }
+
+  .allcontainer .container .foto {
+      width: 100%; /* Imposta la larghezza della foto uguale a quella del container */
+      height: auto; /* Imposta l'altezza in modo automatico per mantenere le proporzioni */
+      /* Altre proprietà della foto se necessario */
+  }
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -168,8 +208,6 @@ transition: transform 0.3s ease-out;
 /* -----------------------Iizio Navbar css------------------------ */
 
 
-
-
 #bio {
     background-image: url(photoop.png);
     background-position: center;
@@ -222,6 +260,8 @@ transition: transform 0.3s ease-out;
     font-size: smaller;
 }
 
+
+
 .NavBarAll {
   display: flex;
   z-index: 10000;
@@ -229,7 +269,7 @@ transition: transform 0.3s ease-out;
   top: 0px;
   width: 100%;
   background-color: black;
-  border-bottom: 1px solid white; 
+  box-shadow: 0 4px 8px 0 #0000005d, 0 6px 20px 0 #0000005d;
   overflow: hidden;
 }
 
@@ -239,7 +279,7 @@ transition: transform 0.3s ease-out;
   overflow: hidden;
   width: 100%;
     background-color: black;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid white ;
   }
   
   .topnav a {
@@ -303,6 +343,7 @@ transition: transform 0.3s ease-out;
   .dropdown-content a:hover {
     background-color: #ddd;
     color: black;
+    
   }
   
   .dropdown:hover .dropdown-content {
@@ -312,6 +353,7 @@ transition: transform 0.3s ease-out;
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child), .dropdown .dropbtn {
       display: none;
+      
     }
     .topnav a.icon {
       float: right;
@@ -342,7 +384,5 @@ transition: transform 0.3s ease-out;
       text-align: left;
     }
   }
-
-
 
 /* -----------Fine NAV BAR css-------------*/ 
