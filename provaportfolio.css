@@ -43,15 +43,15 @@ transition: transform 0.3s ease-out;
 
 
 #c1 {
-
+margin: 10px;
 }
 
 #c2 {
-
+  margin: 10px;
 }
 
 #c3 {
-
+  margin: 10px;
 }
 
 
@@ -90,6 +90,24 @@ transition: transform 0.3s ease-out;
       height: auto; /* Imposta l'altezza in modo automatico per mantenere le proporzioni */
       /* Altre proprietà della foto se necessario */
   }
+  
+  #c1 {
+    margin: 20px;
+    }
+    
+    #c2 {
+      margin: 20px;
+    }
+    
+    #c3 {
+      margin: 20px;
+    }
+    
+
+
+
+
+
 }
 
 
@@ -417,3 +435,57 @@ transition: transform 0.3s ease-out;
   }
 
 /* -----------Fine NAV BAR css-------------*/ 
+
+
+#benefits {
+  background-color: #e0e0e0; /* Sfondo meno accecante */
+  color: black;
+  padding: 40px 0;
+  text-align: center;
+}
+
+#benefits .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+#benefits h2 {
+  margin-bottom: 30px;
+}
+
+.benefit-items {
+  display: flex;
+  justify-content: center; /* Centra gli elementi */
+  align-items: flex-start;
+  flex-wrap: wrap; /* Permette agli elementi di andare a capo se necessario */
+}
+
+.benefit-item {
+  flex-basis: calc(25% - 20px); /* Riduce ulteriormente la larghezza */
+  margin: 10px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: left; /* Allinea il testo a sinistra per una migliore leggibilità */
+}
+
+.benefit-item h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.2em; /* Riduce la dimensione del titolo */
+}
+
+.benefit-item p {
+  text-align: center;
+  line-height: 1.4;
+  font-size: 0.9em; /* Riduce la dimensione del testo */
+}
+
+/* Media queries per adattamenti su schermi più piccoli */
+@media screen and (max-width: 768px) {
+  .benefit-item {
+    flex-basis: 70%; /* Ogni item occupa l'intera larghezza dello schermo su schermi più piccoli */
+  }
+}
