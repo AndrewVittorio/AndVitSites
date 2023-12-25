@@ -14,6 +14,7 @@
 
 <div container class="NavBarAll">
   <div class="topnav" id="myTopnav">
+    <a class="active"><img src="LogoAV.png" style="width: 15vh;"></a>
     <a href="#home" class="active">Home</a>
 
     <a href="#Modelli">Modelli</a>
@@ -22,8 +23,9 @@
       <button class="dropbtn">Contatti
         <i class="fa fa-caret-down"></i>
       </button>
+    
   </div> 
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 </div>
 
@@ -72,6 +74,15 @@ function myFunction() {
     }
 }
 
+    // Chiudi il menu quando si fa clic su un link nella barra di navigazione
+    for (let i = 0; i < links.length; i++) {
+        links[i].addEventListener("click", function () {
+            if (navbar.classList.contains("responsive")) {
+                navbar.classList.remove("responsive");
+            }
+        });
+    }
+    
 
 </script>
 <!------------------Fine NAV BAR - Hero ------------------------->
